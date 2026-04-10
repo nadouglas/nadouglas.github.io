@@ -89,9 +89,14 @@
             }
 
            .about{
-                text-align: center;
-                max-width: 1000px;
-                margin: 0 auto;
+               display:grid;
+               grid-template-columns: 1fr 1fr;
+               gap:40px;
+               text-align:center;
+               max-width:1000px;
+               margin:0 auto;
+               align-items:start;
+
             }
 
             .about .button:hover{
@@ -100,6 +105,7 @@
         
             .about ul{
                 list-style-type:circle;
+                gap:40px;
                 list-style-position:inside;
                 max-width:600px;
                 margin:0 auto;
@@ -123,9 +129,11 @@
 
             .about-video{
                 width: 100%;
-                max-width: 360px;
+                max-width: 200px;
                 height: auto;        
-                border-radius: 0;
+                border-radius: 8px;
+                display:block;
+                margin:20px auto;
             }
 
             .credentials-list{
@@ -140,22 +148,39 @@
                 margin-bottom: 12px;
             }
 
-            .credentials-layout{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: flex-start;
-                gap: 50px;
-                margin-top: 20px;
+          .credentials-layout {
+            display: grid;
+            grid-template-columns: 1fr; 
+             text-align: center; 
             }
-
             *,
             *::before,
             *::after{
                 box-sizing:border-box;
             }
 
-            .reflection p:first-of-type::first-letter{
+            @media (max-width:767px){
+                .about{
+                    grid-template-columns: 1fr;
+                }
+
+                .credentials-layout{
+                    grid-template-columns:1fr;
+                    text-align:center;
+                }
+                  .credentials-list {
+                     text-align: center;
+                        margin: 0 auto;
+                    }
+
+                .about-img,
+                .about-video {
+                    width: 80%;
+                    max-width: 300px;
+                }
+            }
+
+                .reflection p:first-of-type::first-letter{
                 font-size:48px;
                 font-weight:bold;
                 color:#5939cd;
