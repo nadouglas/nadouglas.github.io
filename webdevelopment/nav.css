@@ -89,21 +89,30 @@ nav ul li a:hover {
 }
 .hamburger {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
+
+.hamburger::before {
+    content: "☰";
+}
+
+#menu-toggle {
+    display: none;
+}
+
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
-#menu-toggle {
-    display: none;
-}
+
 @media (max-width: 768px) {
+
     .hamburger {
         display: block;
-        font-size: 30px;
-        cursor: pointer;
     }
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -113,11 +122,10 @@ nav ul {
         right: 0;
         width: 200px;
         padding: 20px;
+        z-index: 1000;
     }
-    #menu-toggle:checked + .hamburger + nav ul {
+
+    #menu-toggle:checked ~ nav ul {
         display: flex;
     }
-}
-.hamburger::before {
-    content: "☰";
 }
