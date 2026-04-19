@@ -334,3 +334,58 @@
                 border-radius: 8px;
                 cursor: pointer;
             }
+            main {
+                max-width: 900px;   
+                margin: 0 auto;         
+                padding: 20px;
+            }
+            .project {
+                display: grid;
+                grid-template-columns: 250px 1fr;
+                gap: 30px;
+                margin-bottom: 50px;
+                align-items: start;
+            }
+
+
+            .left {
+                display: flex;
+                justify-content: center; /* better alignment */
+            }
+
+            .left img {
+                width: 220px;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+            }
+
+
+            .right {
+                max-width: 600px;
+            }
+
+            .right h2 {
+                margin: 0 0 10px 0;
+            }
+
+            .right p {
+                margin: 0 0 10px 0;
+                line-height: 1.5;
+            }
+
+            @media (max-width: 768px) {
+            .project {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .left {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .right {
+                 max-width: 100%;
+            }
+            }
