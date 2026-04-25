@@ -285,11 +285,10 @@
             .contact div {
                 margin-bottom: 20px;
             }
-
             .contact p {
                 margin-bottom: 5px;
                 font-weight: bold;
-                text-align:left;
+                text-align: left;
             }
 
             input,
@@ -326,7 +325,6 @@
                 gap: 6px;
             }
 
-
             .no-bullets input[type="radio"] {
                 width: auto;
                 margin: 0;
@@ -339,6 +337,19 @@
                 font-size: 20px;
                 border-radius: 8px;
                 cursor: pointer;
+            }
+
+            /* MOBILE FIX */
+            @media (max-width:768px) {
+
+                .contact {
+                    width: 100%;
+                }
+
+                .no-bullets {
+                    flex-direction: column;
+                    gap: 10px;
+                }
             }
             main {
                 max-width: 900px;   
@@ -433,9 +444,4 @@
                 width: 100%;
             }
             }
-            @media (max-width:768px) {
-                .contact {
-                    width: 100%
-                }
-                
-            }
+           
