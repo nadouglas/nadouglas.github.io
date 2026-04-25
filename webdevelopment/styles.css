@@ -254,7 +254,7 @@
             }
   
             .contact {
-                max-width: 900px;
+                max-width: 600px;
                 margin: 50px auto;
                 padding: 40px;
                 text-align: left;
@@ -264,7 +264,7 @@
 
             fieldset {
                 border: 2px solid #5939cd;
-                border-radius: 10px;
+                border-radius: 15px;
                 padding: 25px;
                 margin-bottom: 25px;
             }
@@ -432,4 +432,10 @@
             table {
                 width: 100%;
             }
+            }
+            @media (max-width:768px) {
+                .contact {
+                    width: 100%
+                }
+                
             }
