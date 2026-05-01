@@ -9,18 +9,27 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
-
-             h1 {
+                    h1 {
                 text-align: center;
                 color: #2a1f53;   
-                font-size:36px;
-                margin-top:40px;
-            }  
+                font-size: 40px;
+                margin-top: 40px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-shadow: 2px 2px 4px #3a869e;
+                text-decoration: underline;
+            }
 
             h2 {
                 text-align: center;
-                color:  #2a1f53;
-                font-size:24px;
+                color: #2a1f53;
+                font-size: 20px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                text-shadow: 1px 1px 3px #3a869e;
+                text-decoration: underline;
             }
 
             p,
@@ -41,6 +50,7 @@
                 height:20px;
                 margin-left: .5em;
                 margin-right: .5em;
+                
 
             }
             .hero h1{
@@ -54,6 +64,7 @@
 
             .hero h2{
                 margin-top: 40px;
+                font-size:30px
             }
 
             p:not(.hero-paragraph){
@@ -339,7 +350,6 @@
                 cursor: pointer;
             }
 
-            /* MOBILE FIX */
             @media (max-width:768px) {
 
                 .contact {
