@@ -9,7 +9,8 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
-                    h1 {
+            /* Custom font from Google Fonts applied to site */
+            h1 {
                 text-align: center;
                 color: #2a1f53;   
                 font-size: 40px;
@@ -20,7 +21,7 @@
                 text-shadow: 2px 2px 4px #3a869e;
                 text-decoration: underline;
             }
-
+            /* Custom font from Google Fonts applied to site */
             h2 {
                 text-align: center;
                 color: #2a1f53;
