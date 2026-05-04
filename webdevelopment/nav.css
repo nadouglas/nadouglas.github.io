@@ -76,6 +76,11 @@ nav ul li a {
     margin-left: auto;
 }
 
+/* SHOW ☰ */
+.hamburger::before {
+    content: "☰";
+}
+
 /* HIDE CHECKBOX */
 #menu-toggle {
     display: none;
