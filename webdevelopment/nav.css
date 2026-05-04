@@ -70,7 +70,7 @@ nav ul li a {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    margin-left: auto; /* pushes right */
+    margin-left: auto; 
 }
 
 .hamburger::before {
@@ -121,4 +121,8 @@ nav ul li a {
     .submenu:hover > .submenu-menu {
         display: none; /* disable hover on mobile */
     }
+    #menu-toggle:checked ~ nav .dropdown-menu {
+    display: block;
+    position: static;
+}
 }
