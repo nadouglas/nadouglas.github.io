@@ -1,126 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Name: Nabrittney Douglas
-        Date: March 15, 2026
-        Course: ISLT 4355
-        Description: Portfolio home page-->
-    <head> 
-        <!--The head contains metadata and browser instructions. It is not visible on the page. 
-            It belongs at the top of the HTML document. For this webpage, it includes the meta charset, meta name, 
-            style sheet, and title.-->
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
-        <!--Link to favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <!--Link to external stylesheets-->
-        <link rel="stylesheet" href="styles.css">
-         <link rel="stylesheet" href="nav.css">
-        <!--Custom font used here-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">  
-    </head>
-        
-    <body>
-           <header class="top-header">
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+</head>
+
+<body>
+
+<header class="top-header">
 
     <img src="logo.png" alt="Your Site Logo" class="logo">
 
-   <!-- Hamburger toggle -->
+    <!-- Hamburger toggle -->
     <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger" aria-label="Menu"></label>
+
+    <label for="menu-toggle" class="hamburger" aria-label="Menu">☰</label>
 
     <nav>
         <ul class="nav-menu">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
 
+            <!-- DROPDOWN FIXED -->
             <li class="dropdown">
                 <a href="projects.html">Projects</a>
                 <ul class="dropdown-menu">
-                        <ul class="submenu-menu">
-                            <li><a href="e-learning.html">E-Learning</a></li>
-                            <li><a href="storyboard.html">Storyboard</a></li>
-                            <li><a href="infographics.html">Infographics</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="projects.html#pecs">PECS Training</a></li>
+                    <li><a href="projects.html#healthcare">Healthcare Essentials</a></li>
+                    <li><a href="projects.html#planting">Planting Guide</a></li>
                 </ul>
             </li>
 
             <li><a href="reflection.html">Reflection</a></li>
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
     </nav>
 
 </header>
-       <section class="hero">
-            <h1>Welcome To My World of Design</h1>
 
-            <p class="hero paragraph">
-                 <img src="heroimage.jpg" alt="profile photo" class="hero-img">
-                 I am an innovative educator who is passionate about creating impactful learning experiences that
-                 are accessible to all learners through technology, collaboration, and continuous improvement.
-            </p>
-        
-            <h2>Purpose</h2>
+<!-- HERO -->
+<section class="hero">
 
-            <p> 
-                The purpose of my portfolio is to display my experience and creativity as an educator, school leader, and 
-                instructional designer. By organizing my projects into a portfolio, I can provide a visual representation 
-                of the various technological skills that I have developed over the course of my career.
-                This allows me to provide tangible evidence of my skills and explain the thinking process behind my work, including the challenges, 
-                solutions, and overall outcomes. This portfolio will help me stand out to employers and secure future job opportunities.
-             </p>
-        <table class="table">
+    <h1>Welcome To My World of Design</h1>
+
+    <!-- FIXED CLASS NAME -->
+    <p class="hero-paragraph">
+        <img src="heroimage.jpg" alt="profile photo" class="hero-img">
+
+        I am an innovative educator who is passionate about creating impactful learning experiences that
+        are accessible to all learners through technology, collaboration, and continuous improvement.
+    </p>
+
+    <h2>Purpose</h2>
+
+    <p> 
+        The purpose of my portfolio is to display my experience and creativity as an educator, school leader, and 
+        instructional designer. By organizing my projects into a portfolio, I can provide a visual representation 
+        of the various technological skills that I have developed over the course of my career.
+        This allows me to provide tangible evidence of my skills and explain the thinking process behind my work, including the challenges, 
+        solutions, and overall outcomes. This portfolio will help me stand out to employers and secure future job opportunities.
+    </p>
+
+    <!-- TABLE FIXED -->
+    <table class="table">
         <caption>Key Projects</caption>
-    <thead>
-        <tr>
-            <th>Project Name</th>
-            <th>Type</th>
-        </tr>
-    </thead>
 
-    <tbody>
-        <tr>
-            <td>Communicating Using PECS</td>
-            <td>Training</td>
-        </tr>
-        <tr>
-            <td>Healthcare Essentials</td>
-            <td>E-Learning</td>
-        </tr>
-        <tr>
-            <td>Seasonal Planting Guide</td>
-            <td>Infographic</td>
-        </tr>
-    </tbody>
-</table>
-        </tbody> 
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Type</th>
+            </tr>
+        </thead>
 
-         <a href="projects.html" class="button">View My Work</a>
-        </section>
- 
-        <blockquote>
-            <p>
-                <strong>"Equality is treating everyone the same. But equity is taking differences into account so everyone has a chance to succeed." -Jodi Picoult  </strong>
-            </p>
-        </blockquote> 
+        <tbody>
+            <tr>
+                <td>Communicating Using PECS</td>
+                <td>Training</td>
+            </tr>
+            <tr>
+                <td>Healthcare Essentials</td>
+                <td>E-Learning</td>
+            </tr>
+            <tr>
+                <td>Seasonal Planting Guide</td>
+                <td>Infographic</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <footer class="footer">
-            <span>Nabrittney Douglas, May 3, 2026</span>
+    <a href="projects.html" class="button">View My Work</a>
 
-            <span>
-                <img src="phone-icon.png" alt="Phone icon">
-                901-000-1000
-            </span>
+</section>
 
-            <span>
-                <img src="email-icon.png" alt="Email icon">
-                nabrittney@gmail.com
-            </span>
-        </footer>
+<!-- QUOTE -->
+<blockquote>
+    <p>
+        <strong>
+            "Equality is treating everyone the same. But equity is taking differences into account so everyone has a chance to succeed." - Jodi Picoult
+        </strong>
+    </p>
+</blockquote>
 
-        <!--The body will contain everything we want to show up in the browser window. This will 
-            include the header, headings, subheadings, paragraphs, links, images, multimedia, and footer. The header for 
-            this webpage will contain the logo and navigation. The footer section will contain the name and date. -->  
+<!-- FOOTER -->
+<footer class="footer">
+    <span>Nabrittney Douglas, May 3, 2026</span>
+
+    <span>
+        <img src="phone-icon.png" alt="Phone icon">
+        901-000-1000
+    </span>
+
+    <span>
+        <img src="email-icon.png" alt="Email icon">
+        nabrittney@gmail.com
+    </span>
+</footer>
+
 </body>
 </html>
