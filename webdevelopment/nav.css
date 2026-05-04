@@ -33,11 +33,13 @@ nav ul li a {
 }
 
 /* DROPDOWNS */
-.dropdown, .submenu {
+.dropdown,
+.submenu {
     position: relative;
 }
 
-.dropdown-menu, .submenu-menu {
+.dropdown-menu,
+.submenu-menu {
     display: none;
     position: absolute;
     background: white;
@@ -57,6 +59,7 @@ nav ul li a {
     left: 100%;
 }
 
+/* DESKTOP HOVER */
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
@@ -70,9 +73,10 @@ nav ul li a {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
+/* SHOW ☰ */
 .hamburger::before {
     content: "☰";
 }
@@ -103,6 +107,7 @@ nav ul li a {
         width: 220px;
         padding: 15px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
     }
 
     /* SHOW MENU WHEN CLICKED */
@@ -110,19 +115,24 @@ nav ul li a {
         display: flex;
     }
 
-    /* STACK DROPDOWNS */
+    /* REMOVE HOVER ON MOBILE */
+    .dropdown:hover > .dropdown-menu,
+    .submenu:hover > .submenu-menu {
+        display: none !important;
+    }
+
+    /* OPEN DROPDOWN INSIDE MOBILE MENU */
+    #menu-toggle:checked ~ nav .dropdown-menu,
+    #menu-toggle:checked ~ nav .submenu-menu {
+        display: block;
+        position: static;
+        box-shadow: none;
+    }
+
+    /* STACK ITEMS CLEANLY */
     .dropdown-menu,
     .submenu-menu {
         position: static;
         box-shadow: none;
     }
-
-    .dropdown:hover > .dropdown-menu,
-    .submenu:hover > .submenu-menu {
-        display: none; /* disable hover on mobile */
-    }
-    #menu-toggle:checked ~ nav .dropdown-menu {
-    display: block;
-    position: static;
-}
 }
