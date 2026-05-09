@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name: Nabrittney Douglas
+        Date: March 15, 2026
+        Course: ISLT 4355
+        Description: Portfolio home page-->
+    <head> 
+        <!--The head contains metadata and browser instructions. It is not visible on the page. 
+            It belongs at the top of the HTML document. For this webpage, it includes the meta charset, meta name, 
+            style sheet, and title.-->
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <!--Link to favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!--Link to external stylesheets-->
+        <link rel="stylesheet" href="styles.css">
+         <link rel="stylesheet" href="nav.css">
+        <!--Custom font used here-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+    </head>
+        
+    <body>
+       <?php include "header.php"; ?>"
+
+       <section class="hero">
+            <h1>Welcome To My World of Design</h1>
+
+            <p class="hero paragraph">
+                 <img src="heroimage.jpg" alt="profile photo" class="hero-img">
+                 I am an innovative educator who is passionate about creating impactful learning experiences that
+                 are accessible to all learners through technology, collaboration, and continuous improvement.
+            </p>
+        
+            <h2>Purpose</h2>
+
+            <p> 
+                The purpose of my portfolio is to display my experience and creativity as an educator, school leader, and 
+                instructional designer. By organizing my projects into a portfolio, I can provide a visual representation 
+                of the various technological skills that I have developed over the course of my career.
+                This allows me to provide tangible evidence of my skills and explain the thinking process behind my work, including the challenges, 
+                solutions, and overall outcomes. This portfolio will help me stand out to employers and secure future job opportunities.
+             </p>
+        <table class="table">
+        <caption>Key Projects</caption>
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Communicating Using PECS</td>
+            <td>Training</td>
+        </tr>
+        <tr>
+            <td>Healthcare Essentials</td>
+            <td>E-Learning</td>
+        </tr>
+        <tr>
+            <td>Seasonal Planting Guide</td>
+            <td>Infographic</td>
+        </tr>
+    </tbody>
+</table>
+        </tbody> 
+
+         <a href="projects.html" class="button">View My Work</a>
+        </section>
+ 
+        <blockquote>
+            <p>
+                <strong>"Equality is treating everyone the same. But equity is taking differences into account so everyone has a chance to succeed." -Jodi Picoult  </strong>
+            </p>
+        </blockquote> 
+
+        <?php include "footer.php"; ?>
+
+        <!--The body will contain everything we want to show up in the browser window. This will 
+            include the header, headings, subheadings, paragraphs, links, images, multimedia, and footer. The header for 
+            this webpage will contain the logo and navigation. The footer section will contain the name and date. -->  
+</body>
+</html>
