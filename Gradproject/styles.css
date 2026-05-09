@@ -471,6 +471,6 @@
                 width: 100%;
             }
             }
-                    .copyright {
-                color: #c0392b;
+            .footer .copyright {
+                color: red !important;
             }
