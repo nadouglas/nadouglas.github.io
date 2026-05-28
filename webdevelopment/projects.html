@@ -5,16 +5,19 @@ Date: April 30, 2026
 Course: ISLT 4355
 Description: Project page-->
 
-<head> 
-    <meta charset="utf-8"> 
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project Page</title>
-    <!--Link to external style sheets-->
-    <link rel="stylesheet" href="styles.css"> 
+
+    <!-- External Style Sheets -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
-    <!--Link to favicon-->
+
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!--Link to custom font-->
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
@@ -22,20 +25,25 @@ Description: Project page-->
 
 <header class="top-header">
 
-    <img src="logo.png" alt="Your Site Logo" class="logo">
+    <img src="logo.png" alt="Site Logo" class="logo">
+
     <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger"></label>
+
+    <label for="menu-toggle" class="hamburger">
+        <span class="sr-only">Menu</span>
+    </label>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+
             <li><a href="about.html">About</a></li>
 
-            <!-- Dropdown -->
             <li class="dropdown">
                 <a href="projects.html">Projects</a>
+
                 <ul class="dropdown-menu">
-            <!-- Anchor Links-->
+                    <li><a href="#esl">ESL Training</a></li>
                     <li><a href="#pecs">PECS Training</a></li>
                     <li><a href="#healthcare">Healthcare Course</a></li>
                     <li><a href="#planting">Planting Guide</a></li>
@@ -43,91 +51,137 @@ Description: Project page-->
             </li>
 
             <li><a href="reflection.html">Reflection</a></li>
+
             <li><a href="contact.html">Contact</a></li>
-        </ul> 
-    </nav> 
+        </ul>
+    </nav>
+
 </header>
 
 <main>
-    <!--Custom font used here-->
+
     <h1>My Featured Projects</h1>
 
     <!-- Project 1 -->
-    <div class="project" id="pecs">
-        <div class="left">
-            <img src="PECS.png" alt="picture exchange system">
-        </div>
-        <div class="right">
-            <!--Custom font used here-->
-            <h2>Learning to Communicate Using PECS</h2>
-            <p><b>Description:</b> Many of the teachers within my school were having a difficult time communicating with non-verbal students. As a member of the school's instructional leadership team, I met with the school administrators and the Speech-Language Pathologist to determine a 
-                school-wide strategy to overcome this problem. After discussing the issue, I  developed a slide deck to train teachers on how to communicate with non-verbal students using a picture exchange 
-                communication system. Within the training, I explained the meaning of PECS, how to use it, 
-                and data on how it has improved communication skills for others. This was an instructor-led training. 
-                I used Microsoft PowerPoint to develop the training deck</p>
+    <section class="project" id="esl">
 
-            <p><b>Reflection:</b>After delivering the training, the teachers gained insight into how to better communicate with their 
-                students. They understood the importance of a picture exchange system, and they learned strategies on how to create a 
-                system for their classroom. Some teachers needed a separate workshop and work time to create a personalized system, 
-                but overall, the training was successful.</p>
+        <div class="left">
+            <img src="ESL.png" alt="Cover of ESL training course">
         </div>
-    </div>
+
+        <div class="right">
+
+            <h2>Transferring ESL Data Across Platforms</h2>
+
+            <p>
+                <b>Description:</b>
+                This training was developed to help a group of ESL teachers transfer ESL data from one data management system to another. The identified problem that needed to be resolved included sorting and identifying students and completing ILPs accurately. The asynchronous module included a video, scenario-based activities, and various assessments. Microsoft PowerPoint was used to outline the training, and Articulate 360 was the intended development tool. A job aid was also created to support users throughout the process.
+            </p>
+
+            <p>
+                <b>Reflection:</b>
+                After developing the training, I gained experience working with SMEs and stakeholders. I practiced adult learning theories and applied the ADDIE model during development. I also enhanced my skills in survey development, data analysis, asynchronous training development, and creating objective-driven activities and assessments.
+            </p>
+            <P><b>Click to download training outline</b></P>
+            <a href="ESL training.docx" download class="button">
+    Download Document
+</a>
+
+        </div>
+
+    </section>
 
     <!-- Project 2 -->
-    <div class="project" id="healthcare">
-        <div class="left">
-            <img src="healthcare.png" alt="cover page of healthcare course">
-        </div>
-        <div class="right">
-            <!--Custom font used here-->
-            <h2>Healthcare Compliance and Risk Management Essentials</h2>
-            <p><b>Description:</b> This was a self-development project that I created to help me develop technological skills to become 
-                more familiar with using AI to develop e-Learning courses. I developed an e-Learning course using the help of AI to help
-                 healthcare workers gain the knowledge needed to uphold compliance standards and manage risks in the clinical setting. 
-                 The tool used to create this course was Articulate Rise. The audience for this course included all healthcare professionals.
-                  This was a self-guided course that included interactive activities. </p>
+    <section class="project" id="pecs">
 
-            <p><b>Reflection:</b>After completing the project, I noticed that the course was missing key elements for accessibility. 
-                I had to reorganize the course to avoid information overload and add elements such as audio, closed captions, 
-                and an accessible font. In the end, the course met the goal of the course objectives, and I was able to develop skills 
-                on how to better use AI. </p>
+        <div class="left">
+            <img src="PECS.png" alt="Picture Exchange Communication System">
         </div>
-    </div>
+
+        <div class="right">
+
+            <h2>Learning to Communicate Using PECS</h2>
+
+            <p>
+                <b>Description:</b>
+                Many teachers within my school had difficulty communicating with non-verbal students. As part of the instructional leadership team, I collaborated with administrators and the Speech-Language Pathologist to develop a school-wide strategy. I created a slide deck to train teachers on using a Picture Exchange Communication System (PECS). The training explained what PECS is, how to implement it, and how it improves communication skills. Microsoft PowerPoint was used to develop the instructor-led training.
+            </p>
+
+            <p>
+                <b>Reflection:</b>
+                After delivering the training, teachers gained insight into better ways to communicate with their students. They learned the importance of PECS and strategies for creating personalized systems within their classrooms. Some teachers required additional workshops and work sessions, but overall the training was successful.
+            </p>
+
+        </div>
+
+    </section>
 
     <!-- Project 3 -->
-    <div class="project" id="planting">
-        <div class="left">
-            <img src="infographic.png" alt="seasonal planting guide">
-        </div>
-        <div class="right">
-            <!--Custom font used here-->
-            <h2>Seasonal Planting Guide</h2>
-            <p><b>Description:</b> As a member of the school's gardening committee, I created an infographic to give teachers and students
-                 a guide on what to plant during each season. Many of the students who joined the gardening club had no experience with gardening and did not know that
-                certain plants could only be planted during specific seasons. The infographic that was created lists each season and the types of vegetables that should
-                be planted during that season, according to our planting calendar in our zip code. The infographic also includes pictures and bright, inviting colors that 
-                help draw attention to important information. I created this guide using Canva. The audience for this infographic included students, teachers, and gardeners. </p>
+    <section class="project" id="healthcare">
 
-            <p><b>Reflection:</b> By creating this infographic, I was able to share important information about gardening and planting within the seasons. Not only did students gain
-                 new knowledge, but teachers who were new to vegetable gardening did as well. In the end, I was able to meet my intended goal of sharing pertinent planting information 
-                 by creating a seasonal planting guide. </p>
+        <div class="left">
+            <img src="healthcare.png" alt="Healthcare course cover page">
         </div>
-    </div>
+
+        <div class="right">
+
+            <h2>Healthcare Compliance and Risk Management Essentials</h2>
+
+            <p>
+                <b>Description:</b>
+                This self-development project helped me strengthen my technological skills and become more familiar with AI-supported e-learning development. I created an interactive healthcare compliance course using Articulate Rise. The course was designed to help healthcare professionals understand compliance standards and risk management practices within clinical settings.
+            </p>
+
+            <p>
+                <b>Reflection:</b>
+                During development, I recognized the importance of accessibility and reorganized the course to avoid information overload. I added audio, closed captions, and accessible fonts to improve usability. Ultimately, the course met its objectives while helping me improve my understanding of AI-supported instructional design.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Project 4 -->
+    <section class="project" id="planting">
+
+        <div class="left">
+            <img src="infographic.png" alt="Seasonal planting guide infographic">
+        </div>
+
+        <div class="right">
+
+            <h2>Seasonal Planting Guide</h2>
+
+            <p>
+                <b>Description:</b>
+                As a member of the school's gardening committee, I created an infographic to help teachers and students understand what vegetables should be planted during each season. Many students in the gardening club had little gardening experience, so the infographic provided a clear and visually engaging guide based on our local planting calendar. Canva was used to create the infographic.
+            </p>
+
+            <p>
+                <b>Reflection:</b>
+                Creating this infographic allowed me to share important seasonal planting information with both students and teachers. The project successfully supported learning within the gardening club while helping me improve my visual communication and design skills.
+            </p>
+
+        </div>
+
+    </section>
 
 </main>
 
-<footer>
-     <span>Nabrittney Douglas, May 3, 2026</span>
+<footer class="footer">
 
-            <span>
-                <img src="phone-icon.png" alt="Phone icon">
-                901-000-1000
-            </span>
+    <span>Nabrittney Douglas, May 3, 2026</span>
 
-            <span>
-                <img src="email-icon.png" alt="Email icon">
-                nabrittney@gmail.com
-            </span>
+    <span>
+        <img src="phone-icon.png" alt="Phone icon">
+        <a href="tel:9010001000">901-000-1000</a>
+    </span>
+
+    <span>
+        <img src="email-icon.png" alt="Email icon">
+        <a href="mailto:nabrittney@gmail.com">nabrittney@gmail.com</a>
+    </span>
+
 </footer>
 
 </body>
